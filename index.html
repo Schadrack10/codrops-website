@@ -1,72 +1,295 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Perspective Mockup Slideshow | Demo 4</title>
-		<meta name="description" content="A perspective slideshow based on Franklin Ta's CSS matrix3d transforms" />
-		<meta name="keywords" content="perspective, mockup, slideshow, transform, 3d, matrix, css" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate.css" />
-		<link rel="stylesheet" type="text/css" href="css/mockup4.css" />
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body class="demo-4">
-		<div class="container-wrapper">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/DragDropInteractions/"><span>Previous Demo</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=21345"><span>Back to the Codrops Article</span></a></span>
-			</div>
-			<div id="wrap" class="wrap">
-				<div class="mockup">
-					<img class="mockup__img" src="img/mockup4.jpg" />
-					<div class="mobile">
-						<ul id="slideshow-1" class="slideshow">
-							<li class="slideshow__item"><img src="img/small/1.png"/></li>
-							<li class="slideshow__item"><img src="img/small/2.png"/></li>
-							<li class="slideshow__item"><img src="img/small/3.png"/></li>
-							<li class="slideshow__item"><img src="img/small/4.png"/></li>
-						</ul>
-					</div>
-					<div class="screen">
-						<ul id="slideshow-2" class="slideshow">
-							<li class="slideshow__item current"><img src="img/large/1.png"/></li>
-							<li class="slideshow__item"><img src="img/large/2.png"/></li>
-							<li class="slideshow__item"><img src="img/large/3.png"/></li>
-							<li class="slideshow__item"><img src="img/large/4.png"/></li>
-						</ul>
-					</div>
-					<header class="codrops-header">
-						<h1><span>Mockup</span> Slideshow <i>An animated perspective mockup with 3D transforms computed with <a href="http://franklinta.com/2014/09/08/computing-css-matrix3d-transforms/">Franklin Ta's helper script</a></i></h1>
-					</header>
-				</div>
-			</div>
-			 <main class="content container-fluid">
-				   <div class="logo-container"></div>
-				 <h1 class="header">hello codedrops</h1>
-				  <div class="row row-wrapper">
-					  <div class="col-md-6 col-sm-8">hello col</div>
-					  <div class="col-md-6 col-sm-4">hello col</div>
-				  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perspective Mockup Slideshow | Demo 4</title>
+    <meta
+      name="description"
+      content="A perspective slideshow based on Franklin Ta's CSS matrix3d transforms"
+    />
+    <meta
+      name="keywords"
+      content="perspective, mockup, slideshow, transform, 3d, matrix, css"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup4.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="demo-4">
+    <div class="container-wrapper">
+      <!-- Top Navigation -->
+      <div class="codrops-top clearfix">
+        <a
+          class="codrops-icon codrops-icon-prev"
+          href="http://tympanus.net/Development/DragDropInteractions/"
+          ><span>Previous Demo</span></a
+        >
+        <span class="right"
+          ><a
+            class="codrops-icon codrops-icon-drop"
+            href="http://tympanus.net/codrops/?p=21345"
+            ><span>Back to the Codrops Article</span></a
+          ></span
+        >
+      </div>
+      <div id="wrap" class="wrap">
+        <div class="mockup">
+          <img class="mockup__img" src="img/mockup4.jpg" />
+          <div class="mobile">
+            <ul id="slideshow-1" class="slideshow">
+              <li class="slideshow__item"><img src="img/small/1.png" /></li>
+              <li class="slideshow__item"><img src="img/small/2.png" /></li>
+              <li class="slideshow__item"><img src="img/small/3.png" /></li>
+              <li class="slideshow__item"><img src="img/small/4.png" /></li>
+            </ul>
+          </div>
+          <div class="screen">
+            <ul id="slideshow-2" class="slideshow">
+              <li class="slideshow__item current">
+                <img src="img/large/1.png" />
+              </li>
+              <li class="slideshow__item"><img src="img/large/2.png" /></li>
+              <li class="slideshow__item"><img src="img/large/3.png" /></li>
+              <li class="slideshow__item"><img src="img/large/4.png" /></li>
+            </ul>
+          </div>
+          <header class="codrops-header">
+            <h1>
+              <span>Codedrops</span> Website
+              <i
+                >An animated perspective mockup with 3D transforms computed with
+                <a
+                  href="http://franklinta.com/2014/09/08/computing-css-matrix3d-transforms/"
+                  >Franklin Ta's helper script</a
+                ></i
+              >
+            </h1>
+          </header>
+        </div>
+      </div>
+      <main class="web-content container-fluid"style="border: 1px solid transparent;" >
+        <!-- <div class="logo-container">
+          <div class="triangle-down">
+							 hello
+						 </div>
+        </div> -->
 
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half">
+              <img
+                src="./img/road1.jpg"
+                alt="background"
+                width="100%"
+                height="100%"
+                style="filter: grayscale(100%)"
+              />
+              <div class="content-box">
+                <div class="logo-block">
+                  <!-- if black image invert to white -->
+                  <img
+                    src="/img/leaves.png"
+                    alt=""
+                    width="120px"
+                    height="100%"
+                    style="filter: invert(100%)"
+                  />
+                </div>
+                <div class="text-block">
+                  <h3 class="text-center m-2" style="font-weight: bolder">
+                    Contact
+                  </h3>
+                  <p class="text-justify m-2" style="color: #333">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem voluptatibus repellat
+                  </p>
+                  <p class="text-justify m-2">Lorem i +00 3322 667 88</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-half">
+              <div class="separate">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half" style="background: #fff;">hello col</div>
+            <div class="col-md-6 right-half" style="background: #F9B200">hello col</div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half" style="background: #F9B200">hello col</div>
+            <div class="col-md-6 right-half" style="background: #fff;">hello col</div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half">
+              <img
+                src="./img/road1.jpg"
+                alt="background"
+                width="100%"
+                height="100%"
+                style="filter: grayscale(100%)"
+              />
+              <div class="content-box">
+                <div class="logo-block">
+                  <!-- if black image invert to white -->
+                  <img
+                    src="/img/leaves.png"
+                    alt=""
+                    width="120px"
+                    height="100%"
+                    style="filter: invert(100%)"
+                  />
+                </div>
+                <div class="text-block">
+                  <h3 class="text-center m-2" style="font-weight: bolder">
+                    Contact
+                  </h3>
+                  <p class="text-justify m-2" style="color: #333">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem voluptatibus repellat
+                  </p>
+                  <p class="text-justify m-2">Lorem i +00 3322 667 88</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lef-half">
+              <img
+                src="./img/wood.jpg"
+                alt="background"
+                width="100%"
+                height="100%"
+                style="filter: grayscale(0%)"
+              />
+              <div class="content-box">
+                <div class="logo-block">
+                  <!-- if black image invert to white -->
+                  <img
+                    src="/img/leaves.png"
+                    alt=""
+                    width="120px"
+                    height="100%"
+                    style="filter: invert(100%)"
+                  />
+                </div>
+                <div class="text-block">
+                  <h3 class="text-center m-2" style="font-weight: bolder">
+                    Contact
+                  </h3>
+                  <p class="text-justify m-2" style="color: #333">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem voluptatibus repellat
+                  </p>
+                  <p class="text-justify m-2">Lorem i +00 3322 667 88</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half">
+              <img
+                src="./img/Group 1.png"
+                alt="background"
+                width="100%"
+                height="100%"
+                style="filter: grayscale(0%)"
+              />
+              <div class="content-box">
+                <div class="logo-block">
+                  <!-- if black image invert to white -->
+                  <img
+                    src="/img/leaves.png"
+                    alt=""
+                    width="120px"
+                    height="100%"
+                    style="filter: invert(100%)"
+                  />
+                </div>
+                <div class="text-block">
+                  <h3 class="text-center m-2" style="font-weight: bolder">
+                    Contact
+                  </h3>
+                  <p class="text-justify m-2" style="color: #333">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem voluptatibus repellat
+                  </p>
+                  <p class="text-justify m-2">Lorem i +00 3322 667 88</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-half" style="background-color: #F9B200;">hello col</div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="row row-wrapper">
+            <div class="col-md-6 lef-half">
+              <img
+                src="./img/road1.jpg"
+                alt="background"
+                width="100%"
+                height="100%"
+                style="filter: grayscale(100%)"
+              />
+              <div class="content-box">
+                <div class="logo-block">
+                  <!-- if black image invert to white -->
+                  <img
+                    src="/img/leaves.png"
+                    alt=""
+                    width="120px"
+                    height="100%"
+                    style="filter: invert(100%)"
+                  />
+                </div>
+                <div class="text-block">
+                  <h3 class="text-center m-2" style="font-weight: bolder">
+                    Contact
+                  </h3>
+                  <p class="text-justify m-2" style="color: #333">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem voluptatibus repellat
+                  </p>
+                  <p class="text-justify m-2">Lorem i +00 3322 667 88</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-half" style="background-color: #fff;">hello col</div>
+          </div>
+        </section>
+      </main>
 
-			 </main>
-			<!-- <div class="content"> -->
-				<!-- <nav class="codrops-demos">
+      <!-- default  content -->
+
+      <!-- <div class="content"> -->
+      <!-- <nav class="codrops-demos">
 					<a href="index.html">Demo 1</a>
 					<a href="index2.html">Demo 2</a>
 					<a href="index3.html">Demo 3</a>
 					<a class="current-demo" href="index4.html">Demo 4</a>
 				</nav> -->
-				<!-- <p><strong>Free Mockup images from:</strong></p>
+      <!-- <p><strong>Free Mockup images from:</strong></p>
 				<ul class="ref">
 					<li><strong>Demo 1 and 3:</strong> <a href="https://www.behance.net/gallery/19352531/Free-PSD-mockup-vol-2">Free PSD Mockups Vol.2</a></li>
 					<li><strong>Demo 4:</strong> <a href="http://pixelbuddha.net/freebie/morning-device-mockups">Morning Device Mockups</a></li>
@@ -81,9 +304,9 @@
 					<li><strong><a href="http://pixelbuddha.net/freebie/280-line-icons-pack">Line Icons</a></strong> by Jonas Nullens for PixelBuddha</li>
 				</ul>
 			</div> -->
-			<!-- Related demos -->
-			<!-- <section class="related"> -->
-				<!-- <p>If you enjoyed this demo you might also like</p>
+      <!-- Related demos -->
+      <!-- <section class="related"> -->
+      <!-- <p>If you enjoyed this demo you might also like</p>
 				<a href="http://tympanus.net/Tutorials/TiltedContentSlideshow/">
 					<img src="img/related/TiltedContentSlideshow.jpg" />
 					<h3>Tilted Content Slideshow</h3>
@@ -93,50 +316,51 @@
 					<h3>3D App Showcase  </h3>
 				</a>
 			</section> -->
-		</div><!-- /container -->
-		<script src="./js/jquery.js"></script>
-		<script src="./js/logic.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/main.js"></script>
-		<script>
-			(function() {
-				new Slideshow( document.getElementById( 'slideshow-1' ) );
-				setTimeout( function() {
-					new Slideshow( document.getElementById( 'slideshow-2' ) );
-				}, 1750 );
+    </div>
+    <!-- /container -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        new Slideshow(document.getElementById("slideshow-1"));
+        setTimeout(function () {
+          new Slideshow(document.getElementById("slideshow-2"));
+        }, 1750);
 
-				/* Mockup responsiveness */
-				var body = docElem = window.document.documentElement,
-					wrap = document.getElementById( 'wrap' ),
-					mockup = wrap.querySelector( '.mockup' ),
-					mockupWidth = mockup.offsetWidth;
+        /* Mockup responsiveness */
+        var body = (docElem = window.document.documentElement),
+          wrap = document.getElementById("wrap"),
+          mockup = wrap.querySelector(".mockup"),
+          mockupWidth = mockup.offsetWidth;
 
-				scaleMockup();
+        scaleMockup();
 
-				function scaleMockup() {
-					var wrapWidth = wrap.offsetWidth,
-						val = wrapWidth / mockupWidth;
+        function scaleMockup() {
+          var wrapWidth = wrap.offsetWidth,
+            val = wrapWidth / mockupWidth;
 
-					mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
-				}
-				
-				window.addEventListener( 'resize', resizeHandler );
+          mockup.style.transform = "scale3d(" + val + ", " + val + ", 1)";
+        }
 
-				function resizeHandler() {
-					function delayed() {
-						resize();
-						resizeTimeout = null;
-					}
-					if ( typeof resizeTimeout != 'undefined' ) {
-						clearTimeout( resizeTimeout );
-					}
-					resizeTimeout = setTimeout( delayed, 50 );
-				}
+        window.addEventListener("resize", resizeHandler);
 
-				function resize() {
-					scaleMockup();
-				}
-			})();
-		</script>
-	</body>
+        function resizeHandler() {
+          function delayed() {
+            resize();
+            resizeTimeout = null;
+          }
+          if (typeof resizeTimeout != "undefined") {
+            clearTimeout(resizeTimeout);
+          }
+          resizeTimeout = setTimeout(delayed, 50);
+        }
+
+        function resize() {
+          scaleMockup();
+        }
+      })();
+    </script>
+  </body>
 </html>
