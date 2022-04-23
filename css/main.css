@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+.content{
+    /* border: 1px solid red; */
+    height: 500vh;
+    background: url('/img/darkbg.jpg');
+    background-size: cover;
+}
+.logo-container{
+    height: 400px;
+    border:1px solid red;
+}
+
+
+/* responisve columns */
+.row-wrapper{
+    border:1px solid blue;,
+}
+.col-md-6{
+    border:1px solid red;
+}
