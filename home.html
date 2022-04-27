@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perspective Mockup Slideshow | Demo 4</title>
+    <meta
+      name="description"
+      content="A perspective slideshow based on Franklin Ta's CSS matrix3d transforms"
+    />
+    <meta
+      name="keywords"
+      content="perspective, mockup, slideshow, transform, 3d, matrix, css"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup4.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="demo-4">
+    <div class="container-wrapper">
+      <!-- Top Navigation -->
+      <div class="codrops-top clearfix">
+        <a
+          class="codrops-icon codrops-icon-prev"
+          href="http://tympanus.net/Development/DragDropInteractions/"
+          ><span>Previous Demo</span></a
+        >
+        <span class="right"
+          ><a
+            class="codrops-icon codrops-icon-drop"
+            href="http://tympanus.net/codrops/?p=21345"
+            ><span>Back to the Codrops Article</span></a
+          ></span
+        >
+      </div>
+      <div id="wrap" class="wrap">
+        <div class="mockup">
+          <img class="mockup__img" src="img/mockup4.jpg" />
+          <div class="mobile">
+            <ul id="slideshow-1" class="slideshow">
+              <li class="slideshow__item"><img src="img/small/1.png" /></li>
+              <li class="slideshow__item"><img src="img/small/2.png" /></li>
+              <li class="slideshow__item"><img src="img/small/3.png" /></li>
+              <li class="slideshow__item"><img src="img/small/4.png" /></li>
+            </ul>
+          </div>
+          <div class="screen">
+            <ul id="slideshow-2" class="slideshow">
+              <li class="slideshow__item current">
+                <img src="img/large/1.png" />
+              </li>
+              <li class="slideshow__item"><img src="img/large/2.png" /></li>
+              <li class="slideshow__item"><img src="img/large/3.png" /></li>
+              <li class="slideshow__item"><img src="img/large/4.png" /></li>
+            </ul>
+          </div>
+          <header class="codrops-header">
+            <h1 class="shrink-header">
+              <span>Codedrops</span> Website
+              <i
+                >An animated perspective mockup with 3D transforms computed with
+                <a
+                  href="http://franklinta.com/2014/09/08/computing-css-matrix3d-transforms/"
+                  >Franklin Ta's helper script</a
+                ></i
+              >
+            </h1>
+          </header>
+        </div>
+      </div>
+    </div>
+    <main
+      class="web-content container-fluid"
+      style="border: 1px solid transparent"
+    >
+     
+        <div class="row column-row">
+          <div
+            class="col-md-6 col-sm-12 col-xs-12 column-layout filtered-background"
+          >
+            <div class="first-column">
+              <div>
+                <img
+                  src="./img/leaves.png"
+                  alt="site-logo"
+                  width="170px"
+                  style="filter: invert(100%);"
+                />
+                <div class="contact-block">
+                  <h3>Contact us</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus nesciunt mollitia consequatur quasi aut aliquam
+                    molestiae
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+            <div class="row minified-row">
+              <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="res-block">
+                  <div style="display:flex;justify-content:flex-end; "><img src="./img/leaves.png" alt="logo" width="170px"></div>
+                </div>
+                <div class="res-block">
+                  <div style="display:flex;height:100%;align-items: center;">
+                    <div class="border"></div>
+                    <div style="padding: 0 10px">
+                         <h3 class="text-white">Motor deals</h3>
+                         <h3 class="text-white">software deals</h3>
+                         <h3 class="text-white">Engineer deals</h3>
+                         <h3 class="text-dark fw-bold">Limites AWS</h3>
+                         <h3 class="text-dark fw-bold" style="letter-spacing: 5px;font-weight: 800;">Profesyonel</h3>
+                    </div>
+                   
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="res-block-sp">
+                  <div>
+                    <div
+                    style="                       
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                    "
+                  >
+                    <h2 id="warex-header">WAREX</h2>
+                    <h6 id="warex-text">SIRKETLER</h6>
+                  </div>
+                  </div>
+                  <div style="display: flex;align-items: center;justify-content: center;">
+                      <img src="./img/reem.png" alt="product" width="300">
+                  </div>
+                  <div>
+                       <a href="#" class="dark-link">www.frakin page</a>
+                </div>
+                </div>
+            
+                </div>
+                   
+               
+              </div>
+            </div>
+          </div>
+      
+        <div class="row column-row">
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+                <div class="row" style="padding: 0 50px;margin: 0;;background-color: white;">
+                    <div class="col-md-6 col-sm-12 col-md-xs-12 twin-layout-a">
+                        <div style="height: 50px;display: flex;align-items: center;">
+
+                            <a href="" class="dark-link ">DECANCTUR METDIL</a>
+                        </div>
+                          <div class="title-container">
+                            <h1 class="shrink-header">
+                                LOOK. <br />
+                                IT'S <br />
+                                <span style="color: #f9b200;">
+                                  WHAT <br />
+                                  WE DO
+                                </span>
+                              </h1>
+                          </div>
+                          <div style="height: 300px;padding-right: 10px;">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti earum, dicta nostrum incidunt esse similique cum exercitationem, ex amet illo nemo numquam quas. Officia repudiandae natus autem asperiores eaque.</p>
+                          </div>
+                          <div style="height: 60px; display: flex;align-items: center;justify-content: flex-end;">
+                            <a href="" class="dark-link ">DECANCTUR METDIL</a>
+
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-md-xs-12 twin-layout-a">
+                         <div style="height: 450px;display: flex;align-items: center;padding-left: 10px;">
+                             <img src="./img/reem.png" alt="product" width="100%">
+                         </div>
+                         <div style="height: 300px;text-align: justify;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti earum, dicta nostrum incidunt esse similique cum exercitationem, ex amet illo nemo numquam quas. Officia repudiandae natus autem asperiores eaque.</p>
+                        </div>
+                        <div style="height: 60px; display: flex;align-items: center;justify-content: flex-end;">
+                            <a href="" class="dark-link ">DE</a>
+
+                          </div>
+                    </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout" style="background:#f9b200">
+                <div class="row" style="padding: 0;width: 100%;margin: 0;height: 100%;">
+                    <div class="col-md-6 col-sm-12 col-md-sx-12 twin-layout-b">
+                     
+                            <div style="height: 470px;padding: 20px 0; display: flex;justify-content: center;flex-direction: column;">
+                              <h3 style="font-weight: 900; font-size: 20px">
+                                ABOUTS DESIGNS COMPANY
+                                ABOUTS DESIGNS 
+                              </h3>
+                              <hr class="underline" />
+                              <p>
+                                <!-- Loremipsum dolor sit amet,consectetur adipisicing elit. -->
+                                Iusto ab non veritatis iure autem 
+                                ab non veritatis iure autem reiciendis 
+                                repellat rem eos est hic id?
+                           
+                                Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                                Iusto ab non veritatis iure autem cupiditate! Fugiat,
+                                voluptatem vitae ducimus dolor dolore
+                          
+                            
+                                Loremipsummkmkdolor sitamet,consectetur adipisicing elit.
+                                Iusto ab non veritatis iure autem cupiditate! Fugiat
+                              </p>
+                              <p>   Lorem ipsumdolorsit amet,consectetur adipisicingelit.
+                                Iusto ab non veritatis iure autem cupiditate! Fugiat,
+                                Iusto ab non veritatis iure autem cupiditate! Fugiat,
+                                voluptatem vitae ducimus dolo</p>
+                            </div>
+                      
+           
+                        
+                    </div>
+                    <div class="col-md-6 col-sm-12-col-md-sx-12 twin-layout-b">
+                       <div style="height: 470p; display: flex; align-items:center;flex-direction: column;">
+                        <a href="" class="dark-link">text</a>
+                        <h1 class="shrink-header main-text">
+                            PROS. <br />
+                            PES <br />
+                            <span style="color: #fff;font-size:60px">
+                              YONEL <br />
+                              WORK
+                            </span>
+                          </h1>
+                       </div>
+             </div>
+                 <div style="height: 30%; width: 100%; padding: 0 20px;">
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum beatae iure, saepe praesentium, ratione blanditiis sed sunt veniam asperiores tempore mollitia provident dolores distinctio sint? Quo ipsa dolores aliquid? Maiores?
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum beatae iure, saepe praesentium, ratione blanditiis sed sunt veniam asperiores tempore mollitia provident dolores distinctio sint? Quo ipsa dolores aliquid? Maiores?
+                      </p>
+                      <div style="height: 100px; display: flex;align-items: flex-end;justify-content: flex-end; ">
+                        <a href="" class="dark-link ">DE</a>
+
+                      </div>
+
+                 </div>
+                    
+                </div>
+          </div>
+        </div>
+        <div class="row column-row">
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+                 <div class="third-layout">
+                         <h1 class="heading">uzumnyathi</h1>
+                         <h1 class="heading">uzumnyathi</h1>
+                         <hr class="underline">
+                         <div class="row split-categoty">
+                              <div class="col-md-6 col-sm-12 catergory-ad">
+                                   <div class="category-content">
+                                    <h4 style="font-weight:bolder ;margin-bottom: 30px;">Mars text met die kan</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam ad asperiores alias voluptatem quos iusto tempora vel perferendis, officia aut iste. Alias voluptatum delectus officia incidunt, enim cum repellendus?</p>
+                                   </div>
+
+                              </div>
+                              <div class="col-md-6 col-sm-12 catergory-ad">
+                                <div class="category-content">
+                                    <img src="./img/reem.png" alt="" width="250">
+                                </div>
+
+                                  </div>
+                              </div>
+                              <div style="height:100px;display: flex;justify-content: space-between; align-items: flex-end;">
+                                    <a href="" class="dark-link">Textmoretext</a>
+                                    <a href="" class="dark-link">Text</a>
+                              </div>
+                         </div>
+
+                 </div>
+
+
+
+
+                 <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+                    <div class="third-layout" style="background:#fff">
+                        <h1 class="heading">uzumnyathi</h1>
+                        <h1 class="heading">uzumnyathi</h1>
+                        <hr class="underline">
+                        <div class="row split-categoty">
+                             <div class="col-md-6 col-sm-12 catergory-ad">
+                                  <div class="category-content">
+                                    <img src="./img/reem.png" alt="" width="250">
+                         
+                                  </div>
+
+                             </div>
+                             <div class="col-md-6 col-sm-12 catergory-ad">
+                               <div class="category-content">
+                                <h4 style="font-weight:bolder ;margin-bottom: 30px;">Mars text met die kan</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam ad asperiores alias voluptatem quos iusto tempora vel perferendis, officia aut iste. Alias voluptatum delectus officia incidunt, enim cum repellendus?</p>
+                               </div>
+
+                                 </div>
+                             </div>
+                             <div style="height:100px;display: flex;justify-content: space-between; align-items: flex-end;">
+                                   <a href="" class="dark-link">Textmoretext</a>
+                                   <a href="" class="dark-link">Text</a>
+                             </div>
+                        </div>
+                 </div>
+              </div>
+          </div>
+        </div>
+        <div class="row column-row">
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+            <div class="fourth-column">
+                <div style="padding: 60px;height: 70%;display: flex;align-items: center;">
+                    <h1 id="self-title">Lorem, ipsum dolor ullam minima, impedit commodi iure quod tempore momm frem </h1>
+                </div>
+                <div style="height: 30%;display: flex;align-items: flex-end;justify-content:space-between;padding: 20px;">
+                   
+                         <div>
+                             <a href="" class="dark-link">Tctfromn </a>
+
+                         </div>
+                         <div>
+                            <a href="" class="dark-link">
+                                Tectfromn </a>
+
+                        </div>
+                   
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+            <div class="five-column">
+                <div style="padding: 60px;height: 70%;display: flex;align-items: center;">
+                    <div style="padding: 10px;background: #f9b200;border-radius: 10px;">
+
+                        <h1 id="self-title">Lorem, ipsum  <br>
+                            dolor ullam minima,  <br>
+                            impedit commodi iure quod tempore momm frem </h1>
+                    </div>
+                </div>
+                <div style="height: 30%;display: flex;align-items: flex-end;justify-content:space-between;padding: 20px;">
+                   
+                         <div>
+                             <a href="" class="dark-link">Tctfromn </a>
+
+                         </div>
+                         <div>
+                            <a href="" class="dark-link">
+                                Tectfromn </a>
+
+                        </div>
+                   
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row column-row">
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+              <div class="overlay">
+                   <div class="overlay-content">
+                       <h1 style="font-size: 55px;">  <span style="color: #f9b200;font-size: 55px;">Lorem ipsum dolor 
+                        sit amet</span>  <br> consectetur adipisicing s architecto iure quod, quia eligendi illum.</h1>
+                   </div>
+                   <div class="overlay-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae sit beatae culpa, dolorem eveniet, nemo architecto numquam provident aperiam perferendis quae. Reiciendis odio quaerat blanditiis porro itaque maiores vel?</p>  <br>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae sit beatae culpa, dolorem eveniet, nemo architecto numquam provident aperiam perferendis quae. Reiciendis odio quaerat blanditiis porro itaque maiores vel?</p>
+                   </div>
+                   <div class="overlay-button">
+                     <div>
+                       <a href="" class="dark-link">Textto include</a>                   
+
+                     </div>
+                     <div>
+                      <a href="" class="dark-link">Textto include</a>                   
+
+                    </div>
+                        </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+              <div class="overlay-orange">
+                     <div class="row trio-row" >
+                           <div class="col-md-4 col-sm-12 col-xs-12 trio-layout">
+                                 <div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                                  </svg>
+                                 </div>
+                                 <div>
+                                   <h1>50%</h1>
+                                 </div>
+                                 <div>
+                                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, perferendis veniam eius architecto eveniet rem illo in dolore repellat molestiae? Numquam molestias consequuntur nisi aliquam quaerat ex nihil necessitatibus architecto.</p>
+                                 </div>
+                           </div>
+                           <div class="col-md-4 col-sm-12 col-xs-12 trio-layout">
+                            <div>
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                               <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                             </svg>
+                            </div>
+                            <div>
+                              <h1>50%</h1>
+                            </div>
+                            <div>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, perferendis veniam eius architecto eveniet rem illo in dolore repellat molestiae? Numquam molestias consequuntur nisi aliquam quaerat ex nihil necessitatibus architecto.</p>
+                            </div>
+                      </div>
+                      <div class="col-md-4 col-sm-12 col-xs-12 trio-layout">
+                        <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                           <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                         </svg>
+                        </div>
+                        <div>
+                          <h1>50%</h1>
+                        </div>
+                        <div>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, perferendis veniam eius architecto eveniet rem illo in dolore repellat molestiae? Numquam molestias consequuntur nisi aliquam quaerat ex nihil necessitatibus architecto.</p>
+                        </div>
+                  </div>
+                     </div>
+                     <div class="overlay-button" style="height: 142px;">
+                      <div>
+                        <a href="" class="dark-link">Textto include</a>                   
+ 
+                      </div>
+                      <div>
+                       <a href="" class="dark-link">Textto include</a>                   
+ 
+                     </div>
+                         </div>
+              </div>
+          </div>
+        </div>
+        <div class="row column-row">
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+            <div class="fourth-column">
+                <div style="padding: 60px;height: 70%;display: flex;align-items: center;">
+                    <h1 id="self-title">Lorem, ipsum dolor ullam minima, impedit commodi iure quod tempore momm frem </h1>
+                </div>
+                <div style="height: 30%;display: flex;align-items: flex-end;justify-content:space-between;padding: 20px;">
+                   
+                         <div>
+                             <a href="" class="dark-link">Tctfromn </a>
+
+                         </div>
+                         <div>
+                            <a href="" class="dark-link">
+                                Tectfromn </a>
+
+                        </div>
+                   
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 column-layout">
+              <div class="overlay-white">
+                    <div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, suscipit fugiat voluptate quo quaerat ex maiores magni, sint nam pariatur exercitationem commodi molestias eveniet placeat sunt corrupti tempora vero unde
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit dolorem maiores fugit obcaecati, in autem, mollitia id praesentium sunt aliquam sed earum reiciendis totam nulla assumenda hic eveniet laboriosam repellendus.
+
+                      </p>
+                    </div>
+                    <div class="row">
+                             <div class="col-md-8 col-sm-12-col-md-12">
+                               <p>
+                                 <span style="color: #f9b200 solid 1px;">Lorem, ipsum dolor sit amet consectetur </span>  adipisicing elit.
+                                  Nostrum excepturi ullam neque adipisci dicta temporibus tempora asperiores, ipsum culpa earum autem natus non rem quisquam sint, doloribus, corrupti expedita reiciendis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quibusdam ducimus iure dicta aut debitis alias! Magnam voluptatibus earum perferendis blanditiis alias reiciendis odit, itaque modi ipsam deleniti accusantium molestiae!
+                               </p>
+                             </div>
+                             <div class="col-md-4 col-sm-12-col-md-12">
+                                  <img src="../MockupSlideshow/img/reem.png" alt="" width="100%">
+                          
+                             </div>
+                    </div>
+                    <div class="overlay-button" style="height: 170px;align-items: flex-end;padding: 18px;">
+                      <div>    <a href="" class="dark-link">textinside</a></div>
+                      <div>    <a href="" class="dark-link">textinside</a></div>
+                    </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- /container -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        new Slideshow(document.getElementById("slideshow-1"));
+        setTimeout(function () {
+          new Slideshow(document.getElementById("slideshow-2"));
+        }, 1750);
+
+        /* Mockup responsiveness */
+        var body = (docElem = window.document.documentElement),
+          wrap = document.getElementById("wrap"),
+          mockup = wrap.querySelector(".mockup"),
+          mockupWidth = mockup.offsetWidth;
+
+        scaleMockup();
+
+        function scaleMockup() {
+          var wrapWidth = wrap.offsetWidth,
+            val = wrapWidth / mockupWidth;
+
+          mockup.style.transform = "scale3d(" + val + ", " + val + ", 1)";
+        }
+
+        window.addEventListener("resize", resizeHandler);
+
+        function resizeHandler() {
+          function delayed() {
+            resize();
+            resizeTimeout = null;
+          }
+          if (typeof resizeTimeout != "undefined") {
+            clearTimeout(resizeTimeout);
+          }
+          resizeTimeout = setTimeout(delayed, 50);
+        }
+
+        function resize() {
+          scaleMockup();
+        }
+      })();
+    </script>
+  </body>
+</html>

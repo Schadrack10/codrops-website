@@ -8,47 +8,44 @@ body {
 }
 .web-content {
   /* border: 1px solid red; */
-  height: 500vh;
-  background: url("/img/wallb.jpg");
-  background-blend-mode: luminosity;
+  height: auto;
+  background-color: rgb(22, 17, 17);
+  background: url("/MockupSlideshow/img/darkbg.jpg");
+  background-blend-mode:darken;
   background-size: contain;
   margin-top: 0;
 }
 .logo-container {
   height: 500px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* responisve columns */
-/* .row-wrapper {
-  border: 1px solid blue;
-} */
-.col-md-6 {
-  /* border: 1px solid rgb(145, 197, 2); */
-  /* height:300px; */
-  color: white;
+.row-wrapper {
+  /* border: 1px solid blue; */
+  /* height: 600px; */
 }
 
 .lef-half,
 .right-half {
   /* background: yellow; */
-  height: 500px;
+  height: 600px;
   padding: 0;
 }
 .left-background {
-    background: url('/img/road.png');
-    filter: grayscale(100%);
+  background: url("/img/road.png");
+  filter: grayscale(100%);
 }
-.content-box{
-    top: 0;
-    height:100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    /* border: 1px solid yellow; */
+.content-box {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  /* border: 1px solid yellow; */
 }
 .triangle-down {
   width: 300px;
@@ -57,38 +54,212 @@ body {
   border-right: 25px solid transparent;
   border-top: 50px solid #555;
 }
-section{
-    margin-top: 60px;
+section {
+  margin-top: 60px;
 }
-.logo-block{
-    /* border: 1px solid red; */
-    height:30%;
-
+.logo-block {
+  /* border: 1px solid red; */
+  height: 30%;
 }
-.text-block{
-    height:auto;
-    width:250px;
-    background: #F9B200;
-    padding:10px;
-    font-weight: bolder;
-    
-
+.text-block {
+  height: auto;
+  width: 250px;
+  background: #f9b200;
+  padding: 10px;
+  font-weight: bolder;
+  color: #fff;
 }
-
 
 .separate {
-     display: flex;
-     width: 100%;
-     height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
-.separate > div:nth-child(1){
-     height: 100%;
-     width: 40%;
-     background: #F9B200;
+.separate > div:nth-child(1) {
+  height: 100%;
+  width: 40%;
+  background: #f9b200;
 }
-.separate > div:nth-child(2){
-    height: 100%;
-    width: 60%;
-    background: #ffffff;
+.separate > div:nth-child(2) {
+  height: 100%;
+  width: 60%;
+  background: #ffffff;
 }
 
+.border {
+  width: 8px;
+  border-radius: 5px;
+  background: white;
+  height: 240px;
+  margin: 0 20px;
+}
+.white-text {
+  color: #fff;
+}
+.text-block-2 {
+  height: 100%;
+  /* font-family: bolder; */
+}
+.text-block-2 h2 {
+  font-weight: 900;
+}
+#warex-header {
+  font-weight: 900;
+  /* border: 1px solid red; */
+  padding: 0 20px;
+  margin: 0;
+  font-size: 50px;
+}
+#warex-text {
+  font-weight: 500;
+  /* border: 1px solid rgb(0, 255, 13); */
+  font-weight: 600;
+  padding: 0 20px;
+  font-size: 25px;
+}
+.dark-btn{
+  color: #fff;
+  background-color: #222;
+  padding: 5px;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+
+}
+.wwd-container{
+  display: flex;
+  height: 100%;
+  /* border: 1px solid red; */
+  padding: 35px;
+
+}
+.wwd-container > div{
+   width: 50%;
+   height: auto;
+   text-align: justify;
+   padding: 20px;
+   /* border: 1px solid blue; */
+}
+.wwd-container h1{
+  font-weight:bolder;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.wwd-container button{
+    margin: 0;
+     padding: 2;
+}
+.wwd-container > button:nth-child(2){
+    color: red;
+}
+.wwd-container > p {
+  /* text-align: justify; */
+  /* text-align: start; */
+}
+.wwd-container > h3{
+  font-weight: 900;
+}
+.underline{
+  border: 2px solid black;
+
+}
+.center-header{
+  /* border:1px solid red; */
+  height:30%;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center-header h1{
+    font-weight: 900;
+}
+.center-header hr{
+  border: 2px solid ;
+  width: 50%;
+}
+.center-body{
+height: 70%;
+padding: 10px;
+display: flex;
+}
+
+.center-body > div {
+  width: 50%;
+  height:calc(100% - 30%);
+   /* display: flex;
+   flex-direction: column;
+   align-items: center; */
+}
+
+.center-body h3 ,p{
+   font-weight: bold;
+   /* text-align: justify; */
+   
+}
+
+.button-container{
+  /* background-color:   yellowgreen; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 40%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px) {
+  .row-wrapper{
+       min-height: 600px;
+       /* padding: 10px; */
+       /* background: red; */
+  }
+  #reem {
+    width: 120px;
+    height: 120px;
+  }
+  
+  p{
+    font-size: 12px;
+  }
+  .shrink-header{
+    font-size: 25px!important;
+  }
+  .left-half ,.right-half {
+    min-height: 700px;
+    padding: 10px;
+  }
+
+
+
+
+  .center-body > div{
+      /* display: block; */
+      /* padding: 15px; */
+  }
+}
